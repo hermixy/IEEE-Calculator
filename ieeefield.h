@@ -21,6 +21,10 @@ private slots:
     void fillOnesClicked();
     void updateValue();
     void signUpdate();
+<<<<<<< Updated upstream
+=======
+    void MarcinXD();
+>>>>>>> Stashed changes
 
 private:
     QLineEdit * signField;
