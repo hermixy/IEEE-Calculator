@@ -3,6 +3,7 @@
 #include "ieeefield.h"
 #include <QPushButton>
 #include <QLineEdit>
+#include <QLabel>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -20,8 +21,11 @@ MainWindow::MainWindow(QWidget *parent)
     IEEEField * secondNumberLabel = new IEEEField(viewport);
     secondNumberLabel->SetFontSize(14);
 
-    layout->addWidget(firstNumberLabel, 0, 0);
-    layout->addWidget(secondNumberLabel, 1, 0);
+    layout->addWidget(new QLabel("X: "), 0, 0);
+    layout->addWidget(new QLabel("Z: "), 1, 0);
+
+    layout->addWidget(firstNumberLabel, 0, 1);
+    layout->addWidget(secondNumberLabel, 1, 1);
 
     this->setLayout(layout);
     this->setWindowTitle("IEEE Calculator");

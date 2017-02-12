@@ -21,7 +21,6 @@ private slots:
     void fillOnesClicked();
     void updateValue();
     void signUpdate();
-    int XD();
 
 private:
     QLineEdit * signField;
